@@ -25,4 +25,4 @@ EXPOSE 9980/tcp
 
 USER ${PUID}:${PGID}
 
-ENTRYPOINT [ "mockd", "api.addr", ":9980", "dir", "/data" ]
+ENTRYPOINT [ "mockd", "-api.addr", ":9980", "-dir", "/data" ]
